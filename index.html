@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Enter the roll
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- this is the first front page of the website -->
+        <div class="login" id="login">
+            <div class="form-horizontal">
+                <h2 class="heading">Please Fill</h2>
+                <div class="form-group">
+                    <label class="col-sm-10 control-label">Roll Number</label>
+                    <div class = "col-sm-10">
+                        <input class="form-control" id="rollno" type="text" name="rollno" placeholder="Enter your Roll No" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class = "col-sm-offset-2 col-sm-10">
+                        <button onClick="showResult()" type = "submit" class = "btn btn-primary">Proceed</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- this is the second page of the website -->
+        <div class="output" id="mainoutput">
+            <h2 class="heading">Result</h2>
+            <br/>
+            <center>
+            <div id="output table-responsive">
+                <p class="caption">Student details</p>
+                <table class="table table-stripped table-condensed">
+                    <tbody>
+                        <tr>
+                            <td><b>Name</b></td>
+                            <td class="info"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Roll No</b></td>
+                            <td class="info"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <p class="caption">Scores</p>
+                <table class="table table-stripped">
+                    <tbody>
+                        <tr>
+                            <td><b>Tamil</b></td>
+                            <td class="info"></td>
+                        </tr>
+                        <tr>
+                            <td><b>English</b></td>
+                            <td class="info"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Maths</b></td>
+                            <td class="info"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Chemistry</b></td>
+                            <td class="info"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Physics</b></td>
+                            <td class="info"></td>
+                        </tr>
+                        <tr>
+                            <td id="group"></td>
+                            <td class="info"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td class="info"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="window.location.reload()" class="btn btn-danger">Back</button>
+            </div>
+        </center>
+        </div>
+	</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstdap@5.0.1/dist/js/bootstdap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src='./script.js'></script>
+</html>
